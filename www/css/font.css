@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "sutour";
+	src: url("../font/sutour.eot");
+	src: url("../font/sutour.eot?#iefix") format("embedded-opentype"), url("../font/sutour.woff") format("woff"), url("../font/sutour.ttf") format("truetype"), url("../font/sutour.svg#sutour") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[data-icon]:before {
+	font-family: "sutour" !important;
+	content: attr(data-icon);
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-family: "sutour" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-search:before {
+	content: "\62";
+}
+.icon-list:before {
+	content: "\63";
+}
+.icon-chevron-left:before {
+	content: "\68";
+}
+.icon-chevron-right:before {
+	content: "\69";
+}
+.icon-chevron-up:before {
+	content: "\6a";
+}
+.icon-chevron-down:before {
+	content: "\6b";
+}
+.icon-map:before {
+	content: "\6d";
+}
+.icon-close:before {
+	content: "\6c";
+}
+.icon-phone:before {
+	content: "\6f";
+}
+.icon-envelope:before {
+	content: "\70";
+}
+.icon-info:before {
+	content: "\71";
+}
+.icon-clock-o:before {
+	content: "\72";
+}
+.icon-map-marker:before {
+	content: "\73";
+}
+.icon-map-o:before {
+	content: "\61";
+}
+.icon-car:before {
+	content: "\64";
+}

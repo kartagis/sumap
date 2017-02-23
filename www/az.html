@@ -1,0 +1,10 @@
+<div class="nav">
+	<a href="javascript:history.back()" class="back"><i class="icon-chevron-left"></i></a>
+	<div>{{labelAzBookmarks}}</div>
+</div>
+
+<div class="list">
+	<ul>
+		<li ng-repeat="(key, data) in myData"><a href="#{{data.pagetype}}/{{key}}"><i class="icon-angle-right"></i>{{data.title}}</a></li>
+	</ul>
+</div>

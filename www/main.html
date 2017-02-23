@@ -1,0 +1,10 @@
+<div class="list">
+	<ul class="_{{keyword ? 'search' : 'unsearch'}}">
+		<li ng-repeat="(key, data) in filterSearch(myData) | orderObjectBy:'sort-value':true" class="_{{data.homeshow | lowercase}}"><a href="#{{data.pagetype}}/{{key}}"><i class="icon-angle-right"></i>{{data.title}}</a></li>
+		<li class="_notfound">{{labelNoResults}}</li>
+	</ul>
+</div>
+
+<div class="lang">
+	<a ng-click="setLang('tr')" href="" class="_tr {{lang=='tr' ? 'active' : ''}}">TR</a> <a ng-click="setLang('en')" href="" class="_en {{lang=='en' ? 'active' : ''}}">EN</a>
+</div>
