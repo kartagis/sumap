@@ -17,7 +17,7 @@ angularApp.controller('suTourController', function ($scope, $http) {
 	} else {
 		lang = 'en';
 	}
-
+	$scope.JSON=JSON;
 	//$http.get(lang + ".json").then(function (response) {
 	$http.get("http://tercihim.sabanciuniv.edu/" + (lang == 'tr' ? '/' : lang + '/') + "json/v1/sumap").then(function successCallback(response) {
 
@@ -82,7 +82,7 @@ angularApp.controller('listCtrl', function ($scope, $routeParams, $location, $ht
 
 	var idParam = $routeParams.id;
 
-	// console.log("id", idParam);
+	console.log("id", idParam);
 
 	$scope.title = $scope.myData[idParam].title;
 	$scope.body = $scope.myData[idParam].body;
